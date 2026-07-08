@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Biography: Muhammad Iqbal</title>
+  </head>
+  <body>
+
+    <h1>Mini Biography: Muhammad Iqbal</h1>
+    <p>Muhammad Iqbal was a philosopher, poet, and politician in British India. He is widely regarded as having inspired the Pakistan Movement.</p>
+
+    <h2>Early Life</h2>
+    <p>He was born in Sialkot, a city in present-day Pakistan, and showed a passion for poetry and philosophy from a young age.</p>
+    <p><small>Note: Students can adjust details based on the personality they choose.</small></p>
+
+    <h2>Key Contributions</h2>
+    <p>Iqbal was a <strong>visionary thinker</strong> who emphasized self-realization and spiritual revival.</p>
+    <p>He is known as the <em>Spiritual Father of Pakistan</em> for his profound impact on the nation’s ideological foundation.</p>
+    <p>One of his most inspiring works was his poem '<em>Lab Pe Aati Hai Dua Ban Ke Tamanna Meri</em>,' which inspires my teacher deeply because it emphasizes hope and devotion in everyday life.</p>
+
+    <h2>Correction Corner</h2>
+    <p><s>He only worked as a poet.</s> He was also a<em>philosopher, politician, and a key figure in the cultural movement of his time.</em></p>
+
+    <h2>Words That Inspire</h2>
+    <p>He once said, <q><strong> ko kar buland itna ke har taqdeer se pehle, khuda bande se khud poochhe, bata teri raza kya hai</strong>.</q></p>
+    <blockquote>
+      This line encourages us to elevate ourselves so much that even<em> fate asks us what we desire.</em>
+    
+    </blockquote>
+
+    <h3>My Reflection</h3>
+    <p>I admire Muhammad Iqbal because his words give me strength and remind me—and my teacher—of the power of self-belief.</p>
+
+  </body>
+</html>
