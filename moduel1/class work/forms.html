@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> my doctors appointement</title>
+
+    </head>
+    <body>
+        <h1> my doctors appointement</h1>
+        <p>fill in the form below to book your appointment</p>
+        <form>
+            <fieldset>
+                <legend> personal details</legend>
+                <label> your name:</label><br>
+                <input type="text" placeholder="enter your full name"><br><br>
+                <label> patient id:</label><br>
+                <input type="password" placeholder="your secret id"><br><br>
+                <label> date of birth:</label><br>
+                <input type="date"><br><br>
+                <fieldset>
+                <legend>
+                    your visit
+                </legend>
+                <label> chose your doctor:</label><br>
+                <select id="doctor">
+                    <option value="">
+                        select doctor
+                    </option>
+                    <option value="dr-ray">
+                         dr ray general
+                    </option>
+                    <option value="dr-lee">
+                        dr lee teeth
+                    </option>
+                    </select><br><br>
+                    <label> why are you visiting?</label><br>
+                    <input type="radio" name="reason">fever<br>
+                    <input type="radio" name="reason">cold<br>
+                    <label> any notes for the doctor?</label><br>
+                    <textarea id="notes" rows="3" cols="35" placeholder="e.g. i have had a sore a sore throat for 2 days."></textarea><br>
+            </fieldset>
+             
+            <br>
+
+            <fieldset>
+                <legened>
+                    prefered visit day
+
+                </legened>
+                <input type="checkbox" value="mon"> monday<br>
+                <input type="checkbox" value="wed"> wednesday<br>
+
+            </fieldset>
+            <br>
+     <input type="submit" value="Book My Appointment">
+
+        </form>
+    </body>
+</html>
