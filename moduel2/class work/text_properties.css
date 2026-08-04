@@ -1,0 +1,27 @@
+.heroname {
+    color: rgb(235, 161, 24);
+    background-color: rgb(226, 148, 85);
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 10px 6px 6px rgb(212, 156, 52);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-decoration: underline wavy;
+ text-transform: capitalize;
+}
+.tagline {
+    color: rgb(218, 109, 20);
+    background-color: rgb(238, 187, 110);
+    font-size: 20px;
+    text-shadow: 10px 6px 6px rgb(206, 102, 18);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-transform: capitalize;
+}
+.label{
+    color: rgb(224, 87, 63);
+    background-color: rgb(229, 152, 133);
+    font-size: 20px;
+    text-shadow: 10px 6px 6px rgb(206, 102, 18);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-transform: capitalize;
+}
