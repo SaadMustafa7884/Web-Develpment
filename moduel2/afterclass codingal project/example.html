@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Himlands Fan Hub - A Comprehensive Guide</title>
+    <!-- Basic CSS for styling the large page -->
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Smooth scrolling for nav links */
+        }
+
+        /* Container for content width */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50; /* Dark blue-grey */
+            color: #ecf0f1; /* Light grey text */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky; /* Keeps header visible on scroll */
+            top: 0;
+            z-index: 1000; /* Ensures header is above other content */
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex; /* Horizontal navigation */
+            flex-wrap: wrap; /* Allows nav items to wrap */
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 12px; /* Spacing between nav items */
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color change on hover */
+            padding: 5px 0;
+            display: block; /* Makes the whole link clickable area larger */
+        }
+
+        nav a:hover {
+            color: #3498db; /* Blue on hover */
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            /* Background image with overlay for readability */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x500/34495e/ffffff?text=Himlands+Hero+Image') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 450px; /* Minimum height for hero section */
+        }
+
+        .hero h2 {
+            font-size: 3.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Stronger text shadow */
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        .hero .btn {
+            display: inline-block;
+            background-color: #e74c3c; /* Red button */
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero .btn:hover {
+            background-color: #c0392b; /* Darker red */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        /* General Section Styles */
+        section {
+            background-color: white;
+            padding: 50px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Softer shadow */
+            border-radius: 10px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        section h2::after {
+            content: '';
+            width: 100px;
+            height: 5px;
+            background-color: #e74c3c;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            border-radius: 3px;
+        }
+
+        section h3 {
+            color: #3498db;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        /* Character Grid Styles */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .character-card {
+            background-color: #fdfdfd;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .character-card:hover {
+            transform: translateY(-8px); /* More pronounced lift */
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .character-card img {
+            width: 100%;
+            height: 220px; /* Slightly taller images */
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 18px;
+            filter: grayscale(10%); /* Slight grayscale effect */
+            transition: filter 0.3s ease;
+        }
+
+        .character-card:hover img {
+            filter: grayscale(0%); /* Color on hover */
+        }
+
+        .character-card h4 {
+            font-size: 1.6em;
+            color: #2c3e50;
+            margin: 0 0 12px 0;
+        }
+
+        .character-card p {
+            font-size: 1em;
+            color: #555;
+            padding: 0 20px;
+            min-height: 80px; /* Ensures consistent card height for descriptions */
+        }
+
+        /* Gallery Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px; /* Larger gallery images */
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item p {
+            padding: 15px;
+            font-size: 0.95em;
+            color: #666;
+            text-align: center;
+            background-color: #fefefe;
+            margin: 0;
+        }
+
+        /* Episode List Styles */
+        .episode-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .episode-list li {
+            background-color: #ecf0f1;
+            margin-bottom: 12px;
+            padding: 18px 25px;
+            border-left: 6px solid #3498db;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow content to wrap */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .episode-list li strong {
+            color: #2c3e50;
+            font-size: 1.2em;
+            flex-basis: 70%; /* Takes up most of the width */
+        }
+
+        .episode-list li span {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+            flex-basis: 25%; /* Takes remaining width */
+            text-align: right;
+        }
+
+        /* FAQ Styles */
+        .faq-item {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        .faq-item h4 {
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item h4::after {
+            content: '+';
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active h4::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+
+        .faq-item .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .faq-item.active .answer {
+            max-height: 200px; /* Adjust as needed for content */
+            padding-top: 10px;
+        }
+
+        /* Form

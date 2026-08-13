@@ -1,0 +1,56 @@
+
+
+#square {
+width: 600px;
+height: 600px;
+background-color:bisque;
+animation-name: moveright;
+animation-duration: 5s;
+animation-direction: alternate;
+animation-iteration-count:infinite;
+}
+@keyframes moveright{
+from{
+   transform: translateX(0)
+ }
+ to{
+   transform: translateX(300px)
+ }
+}
+
+#circle {
+width: 600px;
+height: 600px;
+background-color:rgb(99, 19, 153);
+border-radius: 50%;
+animation: bounce 3s infinite;
+}
+@keyframes bounce{
+  0% {
+    transform:translateY(0)
+   } 
+   50%{
+    transform:translateY(-100px)
+   }
+   100%{
+    transform:translateY(0)
+   }
+}
+
+#pulse {
+width: 600px;
+height: 600px;
+background-color:rgb(255, 5, 5);
+}
+
+#color-change {
+    width: 600px;
+height: 600px;
+background-color:rgb(9, 117, 218);
+
+}
+/* Syntax Order */
+ /* animation: name duration timing-function delay iteration-count 
+direction */
+/* Practical Example */ 
+/* .box { animation: slideAndFade 3s ease 1s infinite alternate } */
