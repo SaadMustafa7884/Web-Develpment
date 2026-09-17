@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+ <title>My Phone Contact</title>
+ <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+   rel="stylesheet">
+    <style>
+        body{
+            background-color: #F0F0F2;
+        }
+        h1 {
+            color: #FF5A43;
+        }
+        .card-label {
+            font-size: 11px;
+            color: #999;
+            text-transform:uppercase;
+        }
+        pre { font-size: 13px;
+            color: #333;
+        }
+    </style>
+    </head>
+    <body class="py-4">
+        <div class="container">
+            <h1 class="mb-1">my phone contact</h1>
+            <p class="text-muted mb-4">
+                introduction to objects in javascript - grade 4-6
+            </p>
+            <div class="card  shadow-sm mb-3" style="max-width:400px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#FF5A43;">contact details
+                    </h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="card-label d-block">name</span>
+                            <strong id="name">Saad Mustafa</strong>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="card-label d-block">phone number</span>
+                            <strong id="phone">0300-123465</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var mycontact = {
+                name:"Saad Mustafa",
+                phone:"0300-123465"
+            };
+            var nameEl  = document.getElementById("name");
+            nameEl.textContent  = myContact.name;
+            var phoneEl  = document.getElementById("phone");
+            phoneEl.textContent  = myContact.phone;
+            
+        </script>
+    </body>
+
+</html>
