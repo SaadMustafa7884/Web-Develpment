@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="#">Java Script</a>
+            <a class="nav-link" href="#" >About</a>
+
+            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="#">Policy</a>
+            <button>
+                Sign up!
+            </button>
+            
+        </nav>
+
+    </header>
+    <head>
+        <style>
+            header {
+                background-color:darkgoldenrod;
+                color:antiquewhite;
+                font-size: 30px;
+                border: 3px solid black;
+                padding:10px;
+            }
+            .nav-link {
+                color:antiquewhite;
+                padding:30px;
+                font-size:20px;
+
+            }
+            body {
+                background: linear-gradient(to right,burlywood ,bisque,darksalmon);
+            }
+            .navbar-brand {
+                font-weight: bold;
+                color:bisque;          
+             }
+             button {
+                background-color: bisque;
+                color: black;
+                padding: 10px 20px;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-left:1250px;
+             }
+             h2 {
+                color:darkgoldenrod;
+                font-size: 40px;
+                text-align: center;
+             }
+             p {
+                color:darkgoldenrod;
+                font-size:30px;
+                margin-left: 650px;
+               
+
+             }
+             .output {
+                color:darkgoldenrod;
+                font-size:30px;
+                margin-right:600px;
+                border:2px solid  black;
+                border-radius:5px;
+                text-align:center;
+
+
+             }
+        </style>
+
+    </head>
+  <body>
+    
+    
+    <h2>JavaScript: String, Methods, and Loops.</h2>
+    <p>Numbers form 1 to 100:</p>
+    <p>To change the number, Press: Crl and R</p>
+    <p id="date" class="output"></p>
+    <script>
+        
+           document.write("<p class='output'>The random value is " + Math.floor(Math.random() * 100) + "</p>");
+           var date = new Date();
+           document.write("<p class='output'>Today's Date is " + date.getDate() + "</p>");
+    </script>
+  </body>
+</html>
