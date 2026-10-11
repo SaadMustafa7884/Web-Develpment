@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Game Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        button {
+            background: navy;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        div {
+            border: 1px solid navy;
+            width: 280px;
+            margin: 6px auto;
+            padding: 8px 12px;
+            text-align: left;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        MY Game Profile
+    </h1>
+    <button onclick="showProfile()">Show Profile</button>
+
+    <div>Username: <span id="username"></span></div>
+    <div>Score: <span id="score"></span></div>
+    <div>Level: <span id="record"></span></div>
+    <div>Level: <span id="greeting"></span></div>
+    <div>Level: <span id="stars"></span></div>
+    <script>
+
+        function showProfile() {
+            let name = "Toxicpulse";
+            let myscore = 90;
+            let highscore = 100;
+            let istopscore = myscore == highscore;
+            let hour = new Date().getHours();
+            let greeting;
+            if (hour < 12) {
+                greting = "Good Morning!";
+            }
+            else if (hour < 17) {
+                greting = "Good afternoon!";
+            }
+            else {
+                greeting = "good moring!";
+            }
+            let stars = "";
+            let count = 0;
+            while (count < 5) {
+                stars = stars + "⭐";
+                count = count + 1;
+            }
+            document.getElementById("username").innerHTML = name;
+            document.getElementById("score").innerHTML = myscore + " out of " + highscore;
+            document.getElementById("record").innerHTML = istopscore;
+            document.getElementById("greeting").innerHTML = greeting;
+            document.getElementById("stars").innerHTML = stars;
+        }
+    </script>
+</body>
+
+</html>
