@@ -17,14 +17,6 @@ from{
    transform: translateX(300px)
  }
 }
- @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 #circle {
 width: 600px;
