@@ -34,9 +34,13 @@
 <body>
     <h1>My Delivery Tracker</h1>
     <button onclick="saveOrder()">Save Order</button>
+    <button onclick="startDelivery()">Start Delivery</button>
+
     <div> json text <span id="jsonText"></span></div>
     <div>Loaded Order <span id="loadedOrder"></span></div>
     <div>Loaded Price <span id="loadedPrice"></span></div>
+    <div>Status: <span id=status></span></div>
+    <div>Result: <span id=result></span></div>
     <script>
         let order = {
             item: "pizza",
@@ -50,6 +54,27 @@
             document.getElementById("loadedOrder").innerHTML = loadedOrder.item;
             document.getElementById("loadedPrice").innerHTML = "$" + loadedOrder.price;
         }
+        function delay(ms) {
+            return new Promise(function (resolve) {
+                setTimeout(resolve, ms);
+            });
+        }
+        async function startDelivery() {
+            document.getElementById("result").innerHTML = "";
+            document.getElementById("status").innerHTML = "Order recieved!";
+            setTimeout(function () {
+                document.getElementById("status").innerHTML = "Kitchen is preparing...";
+
+            }, 2000);
+            await delay(3000);
+            document.getElementById("status").innerHTML = "Out for delivery!";
+            await delay(3000);
+            document.getElementById("result").innerHTML = "Your ordered has arrived!";
+
+
+        }
+
+
     </script>
 </body>
 
