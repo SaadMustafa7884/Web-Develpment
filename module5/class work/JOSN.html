@@ -1,50 +1,56 @@
 <html>
-    <head>
-        <title>My delivery Tracker</title>
-        <style>
-            body {
-                text-align: center;
-                padding: 30px;
-            }
-            h1 {
-                color:#ff5a43;
-            }
-            button {
-                background:#ff5a43;
-                color: white;
-                padding: 10px 25px;
-                cursor: pointer;
-                margin:5px;
-            }
-            div {
-                border: 1px solid #ff5a43;
-                width:280px;
-                margin: 6px auto; 
-                padding: 8px 12px;
-                text-align: left;
-                border-radius: 6px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>My Delivery Tracker</h1>
-        <button onclick="saveOrder()">Save Order</button>
-        <div> json text <span id="jsonText"></span></div> 
-        <div>Loaded Order <span id="loadedOrder"></span></div> 
-        <div>Loaded Price <span id="loadedPrice"></span></div> 
-        <script>
-            let order = {
-                item : "pizza",
-                price: 5,
-                shop: "My Snack Shop"
-            }
-            function saveOrder() {
-                let jsonText = JSON.stringify(order);
-                let loadedOrder = JSON.parse(jsonText);
-                document.getElementById("jsonText").innerHTML = jsonText;
-                document.getElementById("loadedOrder").innerHTML = loadedOrder.item;
-                document.getElementById("loadedPrice").innerHTML = "$" + loadedOrder.price;
-            }
-        </script>
-    </body>
+
+<head>
+    <title>My delivery Tracker</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #ff5a43;
+        }
+
+        button {
+            background: #ff5a43;
+            color: white;
+            padding: 10px 25px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        div {
+            border: 1px solid #ff5a43;
+            width: 280px;
+            margin: 6px auto;
+            padding: 8px 12px;
+            text-align: left;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Delivery Tracker</h1>
+    <button onclick="saveOrder()">Save Order</button>
+    <div> json text <span id="jsonText"></span></div>
+    <div>Loaded Order <span id="loadedOrder"></span></div>
+    <div>Loaded Price <span id="loadedPrice"></span></div>
+    <script>
+        let order = {
+            item: "pizza",
+            price: 5,
+            shop: "My Snack Shop"
+        }
+        function saveOrder() {
+            let jsonText = JSON.stringify(order);
+            let loadedOrder = JSON.parse(jsonText);
+            document.getElementById("jsonText").innerHTML = jsonText;
+            document.getElementById("loadedOrder").innerHTML = loadedOrder.item;
+            document.getElementById("loadedPrice").innerHTML = "$" + loadedOrder.price;
+        }
+    </script>
+</body>
+
 </html>
