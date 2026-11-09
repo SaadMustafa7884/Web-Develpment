@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Baloo Tamma 2", sans-serif;
+    background: #fff
+}
+
+
+
+.navigation {
+    background: #222;
+    border-top: 2px solid #f2a900;
+    padding: 12px 40px !important;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.navbar-brand h5 {
+    font-family: "Baloo Tamma 2", sans-serif;
+}
+
+.navigation-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500px;
+    color: #fff !important;
+}
+
+.navigation-link:hover {
+    color: #f2a900 !important;
+}
+
+.navbar-toggler {
+    border: 1px solid #f2a900;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(242,169,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+
+/* Banner Image */
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+.text-white {
+    color:  white;
+}
+
+
+/* Main Container height*/
+.main-container {
+     height: 100vh;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:center;
+     background-image: url('https://img.magnific.com/free-photo/blurry-hills-coast-kos-island-near-aegean-sea-greece_181624-14343.jpg?semt=ais_hybrid&w=740&q=80');
+     background-attachment: fixed;
+     background-size: cover;
+
+
+}
